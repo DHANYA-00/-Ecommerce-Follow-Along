@@ -9,5 +9,5 @@ if(process.env.NODE_ENV !== "PRODUCTION"){
     });
 };
 
-//app.use(ErrorHandler);
+app.use(ErrorHandler);
 module.exports=app;
