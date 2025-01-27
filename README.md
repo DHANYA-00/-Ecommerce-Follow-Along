@@ -65,7 +65,7 @@ React Icons: For incorporating eye icons to toggle password visibility.
 
 
 
-*Milestone 3: Serevr setup and error handling*
+*Milestone 3: Server setup and error handling*
 
 
 *Key Features:*
@@ -81,6 +81,32 @@ React Icons: For incorporating eye icons to toggle password visibility.
 
 *Tech Stack*
 
-- Backend: Node.js, Express  
-- Database: MongoDB, Mongoose
+- Backend: Node.js, Express.
+- Database: MongoDB, Mongoose.
+
+
+*Milestone 4: Enabling File Uploads Using Multer*
+
+*Key Features:*
+
+- User Model: Created a user model to handle user-related data and interactions.
+
+- User Controller: Developed a user controller to manage user logic such as creating users, handling authentication, etc.
+
+- File Uploads: Integrated Multer for file handling to allow users to upload files (e.g., profile pictures or product images).
+
+- File Storage Configuration: Configured Multer for local file storage, allowing easy access to uploaded files.
+
+
+*Tech Stack:*
+
+- Backend: Node.js, Express.
+
+- Database: MongoDB, Mongoose.
+
+- File Handling: Multer (for file uploads).
+
+
+
+
 
