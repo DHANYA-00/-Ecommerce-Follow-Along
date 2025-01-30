@@ -109,4 +109,15 @@ React Icons: For incorporating eye icons to toggle password visibility.
 
 
 
+Milestone 5: Project Signup Setup
 
+This milestone focuses on setting up the project structure and implementing a basic signup page.
+
+Key Features
+
+- Project Setup: Initialized the project with the required dependencies and folder structure.
+- Signup Page: A simple signup page with fields for Name Email Password User Photo.
+
+Tech Stack Used
+
+- Frontend: React
