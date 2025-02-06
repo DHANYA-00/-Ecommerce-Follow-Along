@@ -134,3 +134,70 @@ GitHub Updates: Committed changes for password encryption.
 
 Tech stack used:
 nodejs
+
+
+*Milestone 7:-*
+
+  In this milestone we are going to create a backend endpoint for user and  the focus is on validating user credentials and verifying the encrypted password stored in the database.
+
+
+
+Key features:
+
+   1) validate user credentials during login:
+
+Protect User Data: Keeps passwords safe even if the database is compromised.
+
+Privacy: Ensures passwords aren't stored in plain text.
+
+Compliance: Meets security standards like GDPR and PCI-DSS.
+
+Prevents Password Theft: Hashed passwords are difficult to decipher, increasing security.
+
+   2) compare the encrypted password with the user’s input:
+
+User Enters Credentials:
+The user provides their email/username and password on the login page.
+
+Fetch User Data from Database:
+The backend retrieves the user record based on the provided email/username.
+If the user is not found, return an error: "User does not exist."
+
+Compare Encrypted Passwords:
+Process the user's input password using the same hashing algorithm (e.g., bcrypt).
+Compare the resulting hash to the stored hashed password.
+If they match, the user is authenticated; if not, send an error.
+
+Tech stalk:
+ Backend : bcryptjs.
+
+
+*Milestone 8:-*
+
+In this milestone,  we will create a frontend card component for products and design a homepage to display these cards for each product.
+
+Key features:
+  1) create a card component:
+
+Showcase Products Effectively: Presents product details in a clear and visually appealing way.
+
+Reusable Design: Can be used across multiple pages or sections of the app.
+
+Improved User Experience: Makes it easy for users to browse and interact with products.
+
+Organized Layout: Keeps the homepage clean and structured.
+
+  2) display those cards on the products page:
+
+Create a Dynamic Component: Design a single card component that accepts product details as props.
+
+Use Mapping: Use array mapping to iterate over the product list and render a card for each product.
+
+Pass Data Dynamically: Pass unique product information (e.g., name, price, image) to each card.
+
+Maintain Consistency: Ensure the layout remains uniform for all products.
+
+
+Tech stack :
+
+Frontend: react

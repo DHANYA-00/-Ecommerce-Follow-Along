@@ -4,7 +4,7 @@ import styles from "../../styles/styles";
 import { Link } from "react-router-dom";
 import { RxAvatar } from "react-icons/rx";
 import axios from "axios";
-import { server } from "../../server";
+//import { server } from "../../server";
 import { toast } from "react-toastify";
 
 
@@ -16,6 +16,10 @@ const Signup = () => {
   const [password, setPassword] = useState("");
   const [visible, setVisible] = useState(false);
   const [avatar, setAvatar] = useState(null);
+
+
+
+
 
 
   const handleFileInputChange = (e) => {
@@ -33,13 +37,27 @@ const Signup = () => {
   };
 
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
+    const newForm = new FormData();
+    newForm.append("file", avatar);
+    newForm.append("name", name);
+    newForm.append("email", email);
+    newForm.append("password", password);
+    const config = {
+      headers: {
+        "Content-Type": "multipart/form-data",
+        "Accept": "any",
+      },
+    };
+
+
 
 
     axios
-      .post(`${server}/user/create-user`, { name, email, password, avatar })
+      .post("http://localhost:8000/api/v2/user", newForm, config)
       .then((res) => {
+        console.log("res", res)
         toast.success(res.data.message);
         setName("");
         setEmail("");
@@ -47,9 +65,11 @@ const Signup = () => {
         setAvatar();
       })
       .catch((error) => {
+        console.log("rerer")
         toast.error(error.response.data.message);
       });
   };
+ 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
@@ -194,3 +214,63 @@ const Signup = () => {
 
 
 export default Signup
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
