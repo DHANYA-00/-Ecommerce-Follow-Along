@@ -55,7 +55,7 @@ const Signup = () => {
 
 
     axios
-      .post("http://localhost:8000/api/v2/user", newForm, config)
+      .post("http://localhost:5000/api/v2/user", newForm, config)
       .then((res) => {
         console.log("res", res)
         toast.success(res.data.message);
@@ -68,7 +68,34 @@ const Signup = () => {
         console.log("rerer")
         toast.error(error.response.data.message);
       });
+    // let headers = new Headers();
+
+
+    // headers.append('Access-Control-Allow-Origin', 'http://localhost:3000');
+    // headers.append('Access-Control-Allow-Credentials', 'true');
+   
+
+
+    // try {
+    //   const res = await fetch("http://localhost:8000/api/v2/user",  {
+    //     // headers : headers,
+     
+     
+    //     method : "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",  // Important for JSON payloads
+    //     },
+    //     body : JSON.stringify({name, email, password, })
+    //   });
+    //   const data = await res.json();
+    //   console.log(data)
+     
+    // } catch (error) {
+    //   console.log(error)
+    // }
   };
+
+
  
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
@@ -214,63 +241,5 @@ const Signup = () => {
 
 
 export default Signup
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
