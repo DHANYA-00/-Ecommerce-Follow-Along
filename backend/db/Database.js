@@ -1,9 +1,11 @@
-const mongoose=require("mongoose");
-const connectDatabase=()=>{
-mongoose
-.connect(process.env.DB_URL)
-.then((data)=>{
-    console.log(`MongoDb connected with server: ${data.connection.host}`);
+const mongoose = require("mongoose");
+
+
+const connectDatabase = () => {
+  mongoose
+    .connect(process.env.DB_URL) // No need for useNewUrlParser or useUnifiedTopology
+    .then((data) => {
+      console.log(`MongoDB connected with server: ${data.connection.host}`);
     })
     .catch((err) => {
       console.error(`Database connection failed: ${err.message}`);
@@ -13,4 +15,3 @@ mongoose
 
 
 module.exports = connectDatabase;
-
