@@ -249,3 +249,9 @@ In this milestone, we focused on making the home page dynamic by fetching and di
 **Milestone 12 - My Products Page with User-Based Filtering** 
 
 In this milestone, we developed the **My Products** page, which displays only the products added by the logged-in user based on their email. We achieved this by writing a backend endpoint that filters product data in MongoDB using the user's email and sends only the relevant products to the frontend. On the frontend, we implemented a function to fetch this filtered data and dynamically render it using the existing product card component. This milestone provided valuable experience in filtering data based on specific constraints, handling API requests efficiently, and dynamically displaying user-specific content. Successfully completing this step enhances the personalization of the application, allowing users to manage their own products seamlessly. 
+
+
+**MileStone-13 - Creating an edit button**
+
+In this milestone, we created a edit button to modify the already entered details which makes the product more customizable. It allows the user to change all the details of the product.
+We have changed the product.js in controller and few major changes in frontend.
