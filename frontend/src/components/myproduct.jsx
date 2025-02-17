@@ -18,7 +18,6 @@ function Myproduct({ _id, name, images, description, price }) {
 
     const currentImage = images && images.length > 0 ? images[currentIndex] : null;
 
-
     const handleEdit = () => {
         navigate(`/create-product/${_id}`);
     };

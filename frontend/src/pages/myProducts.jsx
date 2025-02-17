@@ -7,7 +7,7 @@ export default function MyProducts() {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const email = "oviya.s2604@gmail.com";
+    const email = "dhanya@gmail.com";
 
 
     useEffect(() => {

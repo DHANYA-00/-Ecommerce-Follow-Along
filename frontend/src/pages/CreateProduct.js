@@ -32,7 +32,7 @@ const CreateProduct = () => {
     useEffect(() => {
         if (isEdit) {
             axios
-                .get(`http://localhost:8000/api/v2/product/product/${id}`)
+                .get(`http://localhost:5000/api/v2/product/product/${id}`)
                 .then((response) => {
                     const p = response.data.product;
                     setName(p.name);
@@ -44,7 +44,7 @@ const CreateProduct = () => {
                     setEmail(p.email);
                     if (p.images && p.images.length > 0) {
                         setPreviewImages(
-                            p.images.map((imgPath) => `http://localhost:8000${imgPath}`)
+                            p.images.map((imgPath) => `http://localhost:5000${imgPath}`)
                         );
                     }
                 })
@@ -83,7 +83,7 @@ const CreateProduct = () => {
         try {
             if (isEdit) {
                 const response = await axios.put(
-                    `http://localhost:8000/api/v2/product/update-product/${id}`,
+                    `http://localhost:5000/api/v2/product/update-product/${id}`,
                     formData,
                     {
                         headers: { "Content-Type": "multipart/form-data" },
@@ -95,7 +95,7 @@ const CreateProduct = () => {
                 }
             } else {
                 const response = await axios.post(
-                    "http://localhost:8000/api/v2/product/create-product",
+                    "http://localhost:5000/api/v2/product/create-product",
                     formData,
                     {
                         headers: { "Content-Type": "multipart/form-data" },

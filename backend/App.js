@@ -59,7 +59,7 @@ app.use('/products', express.static(path.join(__dirname, 'products')));
 
 // Import Routes
 const userRoutes = require("./controller/user");
-const productRoutes = require('./controller/product');
+const productRoutes = require('./controller/Product');
 
 // Route Handling
 app.use("/api/v2/user", userRoutes);
