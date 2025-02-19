@@ -260,3 +260,13 @@ We have changed the product.js in controller and few major changes in frontend.
 **Milestone 14 - Delete Product Functionality**  
 
 In this milestone, we implemented a *delete functionality* for products. We added a *DELETE API endpoint* in the backend using *Express.js* and *MongoDB, allowing products to be removed using their ID. On the frontend, we added a **delete button* to each product card, which sends a request to the server to remove the product from the database. This ensures a smooth user experience by dynamically updating the UI after deletion.
+
+**Milestone 15 - Reusable Navigation Component**  
+
+In this milestone, we created a reusable and responsive navigation bar for our eCommerce project. The Nav component includes links to essential pages like home, My Products, Add Product, and Cart. It was designed to be adaptive and user-friendly using CSS for responsiveness. This component was then integrated across multiple pages to ensure seamless navigation throughout the app. 
+
+
+Tech Stalk :
+
+Frontend:
+React.js – For building the Nav component.
