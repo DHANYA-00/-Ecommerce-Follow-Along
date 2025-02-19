@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import MyProduct from "../components/myproduct";
 
-
 export default function MyProducts() {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
