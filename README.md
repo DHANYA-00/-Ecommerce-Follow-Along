@@ -255,3 +255,8 @@ In this milestone, we developed the **My Products** page, which displays only th
 
 In this milestone, we created a edit button to modify the already entered details which makes the product more customizable. It allows the user to change all the details of the product.
 We have changed the product.js in controller and few major changes in frontend.
+
+
+**Milestone 14 - Delete Product Functionality**  
+
+In this milestone, we implemented a *delete functionality* for products. We added a *DELETE API endpoint* in the backend using *Express.js* and *MongoDB, allowing products to be removed using their ID. On the frontend, we added a **delete button* to each product card, which sends a request to the server to remove the product from the database. This ensures a smooth user experience by dynamically updating the UI after deletion.
