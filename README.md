@@ -1,6 +1,6 @@
 # -Ecommerce-Follow-Along
 
-*Milestone1:project Overview*
+**Milestone1:project Overview**
 
 This project aims to build a dynamic e-commerce platform that allows users to browse products, add them to a shopping cart, and complete purchases securely.
 
@@ -65,7 +65,7 @@ React Icons: For incorporating eye icons to toggle password visibility.
 
 
 
-*Milestone 3: Server setup and error handling*
+**Milestone 3: Server setup and error handling**
 
 
 *Key Features:*
@@ -85,7 +85,7 @@ React Icons: For incorporating eye icons to toggle password visibility.
 - Database: MongoDB, Mongoose.
 
 
-*Milestone 4: Enabling File Uploads Using Multer*
+**Milestone 4: Enabling File Uploads Using Multer**
 
 *Key Features:*
 
@@ -109,7 +109,7 @@ React Icons: For incorporating eye icons to toggle password visibility.
 
 
 
-Milestone 5: Project Signup Setup
+**Milestone 5: Project Signup Setup**
 
 This milestone focuses on setting up the project structure and implementing a basic signup page.
 
@@ -136,7 +136,7 @@ Tech stack used:
 nodejs
 
 
-*Milestone 7:-*
+**Milestone 7:-**
 
   In this milestone we are going to create a backend endpoint for user and  the focus is on validating user credentials and verifying the encrypted password stored in the database.
 
@@ -172,7 +172,7 @@ Tech stalk:
  Backend : bcryptjs.
 
 
-*Milestone 8:-*
+**Milestone 8:-**
 
 In this milestone,  we will create a frontend card component for products and design a homepage to display these cards for each product.
 
@@ -270,3 +270,13 @@ Tech Stalk :
 
 Frontend:
 React.js – For building the Nav component.
+
+
+**Milestone 16 - Product Info Page**
+
+In this milestone, we created a Product Info Page that displays detailed product data. Users can choose the quantity and click the Add to Cart button to add items to their cart.
+
+
+**Tech Stack:**
+Frontend:
+ React.js – For building the Product Info Page.
