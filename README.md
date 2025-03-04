@@ -280,3 +280,16 @@ In this milestone, we created a Product Info Page that displays detailed product
 **Tech Stack:**
 Frontend:
  React.js – For building the Product Info Page.
+
+
+ **Milestone 17: Add Products to Cart 🛒**
+
+Overview
+In this milestone, you'll modify the user schema to store cart items and create an API endpoint to add products to the cart.
+
+**Steps**
+
+Update User Schema – Add a cart field to store products.
+Create Cart Schema – Define how products are stored in the cart.
+Implement API Endpoint – Receive and store product details in the cart.
+By the end, your backend will support adding products to a user’s cart and storing them in the database.

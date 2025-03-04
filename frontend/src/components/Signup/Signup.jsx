@@ -276,7 +276,7 @@ export default Signup;
 
 
 //     // try {
-//     //   const res = await fetch("http://localhost:8000/api/v2/user",  {
+//     //   const res = await fetch("http://localhost:/api/v2/user",  {
 //     //     // headers : headers,
      
      
