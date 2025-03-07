@@ -319,6 +319,7 @@ Backend : mongoDB
 **Milestone 20**
 
 *Overview:*
+
 Backend: Endpoint to send user data via email.
 Frontend: Profile page displaying user info.
 
