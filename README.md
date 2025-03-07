@@ -304,3 +304,14 @@ we will create an Backend endpoint for the cart page. We will write the backend 
 **Steps**
 - Create an Backend endpoint for cart page.
 - Write and endpoint to get products inside cart for user.
+
+
+**Milestone 19 - Cart Page Frontend & Quantity Management API**
+
+*Overview:*
+
+In this milestone, we will create the cart page UI, display products from the backend API, and implement functionality to increase and decrease product quantity using backend endpoints.
+
+*Tech stalk :*
+Frontend: React.js
+Backend : mongoDB
