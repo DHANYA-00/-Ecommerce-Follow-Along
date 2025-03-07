@@ -315,3 +315,21 @@ In this milestone, we will create the cart page UI, display products from the ba
 *Tech stalk :*
 Frontend: React.js
 Backend : mongoDB
+
+**Milestone 20**
+
+*Overview:*
+Backend: Endpoint to send user data via email.
+Frontend: Profile page displaying user info.
+
+*Features:*
+
+- Show profile photo, name, and email.
+- Display addresses with an "Add Address" button.
+- Show "No address found" if no addresses exist.
+
+
+
+
+
+
