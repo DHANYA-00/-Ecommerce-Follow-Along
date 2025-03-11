@@ -330,6 +330,33 @@ Frontend: Profile page displaying user info.
 - Show "No address found" if no addresses exist.
 
 
+# MIlestone-21 : Created Address Form Page
+
+Designed a user-friendly form layout for entering address details.
+
+Included input fields for:
+
+Country, City, Address Line 1, Address Line 2 (optional),Zip Code
+
+Address Type (e.g., Home, Office)
+
+Implemented State Management
+
+Utilized React state (useState) to manage form input values.
+
+Ensured input fields dynamically update the state.
+
+Navigation Integration
+
+Configured navigation to the address form when "Add Address" is clicked in the profile.
+
+Used React Router for seamless page transition.
+
+📌 Outcome
+
+Successfully implemented an address form that collects user input and navigates correctly from the profile section. This milestone enhances user experience by allowing them to save and manage addresses efficiently.
+
+
 
 
 
