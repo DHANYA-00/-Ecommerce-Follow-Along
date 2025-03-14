@@ -4,6 +4,7 @@ import { LoginPage,SignupPage,Home,CreateProduct, MyProducts, Cart, CreateAddres
 import "./App.css";
 import ProductDetails from './pages/productDetails.jsx';
 import Profile from './pages/profile.jsx';
+import OrderConfirmation from './OrderConfirmation.jsx';
 
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
         <Route path='/profile' element={<Profile/>}/>
         <Route path='/createAddress' element={<CreateAddress/>}/>
         <Route path='/select-address' element={<SelectAddress/>}/>
+        <Route path='/order-confirmation' element={<OrderConfirmation/>}/>
       </Routes>
       </BrowserRouter>
       

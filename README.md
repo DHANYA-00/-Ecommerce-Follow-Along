@@ -386,3 +386,18 @@ Implement Logic - Find user, update their address array, and save changes.
 - A Mongoose schema to store order details.
 
 
+# Milestone 24: Order Confirmation Page
+
+*Overview:*
+- Build an Order Confirmation page to show the order summary, selected address, and total price. Add a button to finalize the order.
+
+
+*Steps to complete:*
+
+- Show Ordered Products: Display product details from the cart.
+
+- Display Selected Address: Show the delivery address picked by the user.
+
+- Calculate Total Price: Sum up the item prices, including taxes/discounts if needed.
+
+- Add Place Order Button: Finalize the order and send it to the backend.
