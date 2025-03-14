@@ -370,4 +370,19 @@ Set Up Route - Create an Express route to handle address submissions.
 Implement Logic - Find user, update their address array, and save changes.
 
 
+# milestone 23 :-
+
+*overview:*
+ create an select address page in frontend and we will write product schema for the orders in the backend.
+
+*Steps to complete:*
+
+- A 'Place Order' button inside the cart page.
+
+- A 'Select Address' page displaying all saved addresses and allowing users to select one.
+
+- A backend endpoint to fetch all user addresses.
+
+- A Mongoose schema to store order details.
+
 

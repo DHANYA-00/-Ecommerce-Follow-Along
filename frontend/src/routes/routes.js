@@ -7,7 +7,8 @@ import Cart from "../pages/cart";
 import productDetails from "../pages/productDetails";
 import profile from '../pages/profile';
 import CreateAddress from "../pages/createAddress";
+import SelectAddress from "../pages/SelectAddress";
 
 export {
-    LoginPage,SignupPage,Home,CreateProduct,MyProducts,Cart,productDetails,profile,CreateAddress
+    LoginPage,SignupPage,Home,CreateProduct,MyProducts,Cart,productDetails,profile,CreateAddress,SelectAddress
 }
