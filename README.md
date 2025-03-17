@@ -420,3 +420,18 @@ This milestone focuses on creating an Express backend endpoint that handles plac
 - Saves orders to the MongoDB orders collection.
 
 
+
+# Milestone 26 -Get User Orders Endpoint 
+
+*Overview:*
+
+This milestone focuses on creating an Express backend endpoint that fetches all orders for a specific user. It receives the user's email, retrieves the user’s ID, and fetches the corresponding orders from MongoDB.
+
+*Features:*
+
+- Fetch User Orders: Get all orders by user email.
+
+- Detailed Order Info: Includes product, quantity, address, and status.
+
+- Error Handling: Handles missing users or orders.
+
