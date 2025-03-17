@@ -401,3 +401,22 @@ Implement Logic - Find user, update their address array, and save changes.
 - Calculate Total Price: Sum up the item prices, including taxes/discounts if needed.
 
 - Add Place Order Button: Finalize the order and send it to the backend.
+
+#  Milestone 25: create an backend endpoint for place order.
+
+*Overview:*
+
+This milestone focuses on creating an Express backend endpoint that handles placing orders. It receives product details, user information, and address data, then processes and stores the order in MongoDB.
+
+
+*Features:*
+
+- Accepts user email, products, and address details.
+
+- Retrieves user ID from the email.
+
+- Creates individual orders per product.
+
+- Saves orders to the MongoDB orders collection.
+
+
