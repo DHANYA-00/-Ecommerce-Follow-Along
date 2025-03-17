@@ -4,7 +4,7 @@ import { LoginPage,SignupPage,Home,CreateProduct, MyProducts, Cart, CreateAddres
 import "./App.css";
 import ProductDetails from './pages/productDetails.jsx';
 import Profile from './pages/profile.jsx';
-import OrderConfirmation from './OrderConfirmation.jsx';
+import OrderConfirmation from './pages/OrderConfirmation.jsx';
 
 
 const App = () => {
