@@ -435,3 +435,21 @@ This milestone focuses on creating an Express backend endpoint that fetches all 
 
 - Error Handling: Handles missing users or orders.
 
+
+# Milestone 27 -Creating frontend page that will display all the user orders.
+
+*Overview:*
+
+This milestone focuses on Creating frontend page that will display all the user orders.
+
+*Features:*
+
+- Need to create an my-orders page.
+
+- Need to send an get request to my-orders endpoint that we created in previous milestone.
+
+- Need to send user mail in to endpoint to get all the user orders.
+
+- Display all the user orders.
+
+- We will add my-orders page in navbar for better navigation.

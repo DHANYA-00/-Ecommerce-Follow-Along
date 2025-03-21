@@ -5,6 +5,7 @@ import "./App.css";
 import ProductDetails from './pages/productDetails.jsx';
 import Profile from './pages/profile.jsx';
 import OrderConfirmation from './pages/OrderConfirmation.jsx';
+import MyOrdersPage from './pages/MyOrdersPage.jsx';
 
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
         <Route path='/createAddress' element={<CreateAddress/>}/>
         <Route path='/select-address' element={<SelectAddress/>}/>
         <Route path='/order-confirmation' element={<OrderConfirmation/>}/>
+        <Route path ='/myorders' element={<MyOrdersPage/>}/>
       </Routes>
       </BrowserRouter>
       
