@@ -480,3 +480,14 @@ Database: MongoDB
 Frontend: React
 
 Payment Gateway: PayPal
+
+# Milestone-30 -How to add online payment gateway to our application using PayPal API.
+
+1. Install the @paypal/react-paypal-js package in your project.
+2. Wrap your app with PayPalScriptProvider and provide your PayPal Client ID.
+3. Create a PayPal button to handle payments.
+4. Add the PayPal button to your checkout page.
+5. Use *Sandbox mode* for testing before going live.
+6. Replace the sandbox client-id with a live Client ID for real transactions.
+
+- This integration allows users to make secure payments via PayPal, credit, and debit cards. 
