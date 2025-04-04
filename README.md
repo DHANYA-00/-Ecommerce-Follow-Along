@@ -501,3 +501,15 @@ In this milestone, we implement Redux for global state management, allowing seam
 *Tech Stack:*
 - Frontend: React
 - State Management: Redux, React-Redux
+
+# Milestone 32: Managing Mail with Global State (Redux)
+
+*Overview:*
+- On the Login page, we used dispatch to save the email.
+
+- On other pages, we used useSelector to access the email from the global state.
+
+- This makes the email available across all pages without passing it as props.
+
+*Tech Stack:*
+- State Management: Redux, React-Redux
