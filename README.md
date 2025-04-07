@@ -523,3 +523,20 @@ In this milestone, we implement Redux for global state management, allowing seam
 - Node.js & Express
 - jsonwebtoken (JWT)
 - Cookies (via res.cookie)
+
+# Milestone 34: JWT Token Validation from Cookies.
+
+*Overview:*
+- In this milestone, we will learn how to validate a JWT token stored in cookies to ensure secure access to protected pages.
+
+*Tech Stack:*
+- Secure Token Storage: JWT stored in HTTP-only cookies for enhanced security.
+
+- Token Extraction: Client reads and sends the JWT from cookies.
+
+- Middleware Validation: Server verifies the JWT before granting access to protected routes.
+
+- Route Protection: Unauthorized users are redirected to the login page.
+
+- Reusable Middleware: Easily apply authentication logic across multiple backend routes.
+
