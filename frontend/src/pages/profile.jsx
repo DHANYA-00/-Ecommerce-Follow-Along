@@ -3,6 +3,7 @@ import AddressCard from "../components/AddressCard";
 import Nav from "../components/NavBar";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+import axios from "../axiosConfig";
 
 
 export default function Profile() {
@@ -26,8 +27,8 @@ export default function Profile() {
 
     useEffect(() => {
         if(!email)return;
-        fetch(
-            `http://localhost:5000/api/v2/user/profile?email=${email}`,
+        axios.get(
+            `/api/v2/user/profile?email=${email}`,
             {
                 method: "GET",
                 headers: {
@@ -36,16 +37,10 @@ export default function Profile() {
             },
         )
             .then((res) => {
-                if (!res.ok) {
-                    throw new Error(`HTTP error! status: ${res.status}`);
-                }
-                return res.json();
-            })
-            .then((data) => {
-                setPersonalDetails(data.user);
-                setAddresses(data.addresses);
-                console.log("User fetched:", data.user);
-                console.log("Addresses fetched:", data.addresses);
+                setPersonalDetails(res.data.user);
+                setAddresses(res.data.addresses);
+                console.log("User fetched:", res.data.user);
+                console.log("Addresses fetched:", res.data.addresses);
             });
     }, [email]);
     return (

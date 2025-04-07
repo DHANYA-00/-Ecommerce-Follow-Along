@@ -529,7 +529,7 @@ In this milestone, we implement Redux for global state management, allowing seam
 *Overview:*
 - In this milestone, we will learn how to validate a JWT token stored in cookies to ensure secure access to protected pages.
 
-*Tech Stack:*
+*Key Features:*
 - Secure Token Storage: JWT stored in HTTP-only cookies for enhanced security.
 
 - Token Extraction: Client reads and sends the JWT from cookies.

@@ -3,6 +3,7 @@ import CartProduct from '../components/CartProduct';
 import Nav from '../components/NavBar';
 import { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
+import axios from '../axiosConfig';
 
 
 const Cart = () => {
@@ -15,16 +16,11 @@ const Cart = () => {
 
     useEffect(() => {
       if(!email)return;
-        fetch(`http://localhost:5000/api/v2/product/cartproducts?email=${email}`)
+        axios.get(`/api/v2/product/cartproducts?email=${email}`)
           .then((res) => {
-            if (!res.ok) {
-              throw new Error(`HTTP error! status: ${res.status}`);
-            }
-            return res.json();
-          })
-          .then((data) => {
-            setProducts(data.cart.map(product => ({quantity: product['quantity'], ...product['productId']})));
-            console.log("Products fetched:", data.cart);
+           
+            setProducts(res.data.cart.map(product => ({quantity: product['quantity'], ...product['productId']})));
+            console.log("Products fetched:", res.data.cart);
           })
           .catch((err) => {
             console.error(" Error fetching products:", err);

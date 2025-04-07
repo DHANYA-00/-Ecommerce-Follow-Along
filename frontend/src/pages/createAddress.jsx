@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
+import axios from "../axiosConfig";
 import { useNavigate } from "react-router-dom";
 import Nav from "../components/NavBar";
 import { useSelector } from "react-redux";
@@ -20,6 +20,7 @@ const CreateAddress = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        
         const addressData = {
             country,
             city,
@@ -33,7 +34,7 @@ const CreateAddress = () => {
 
         try {
             const response = await axios.post(
-                "http://localhost:5000/api/v2/user/add-address",
+                "/api/v2/user/add-address",
                 addressData,
                 {
                     headers: { "Content-Type": "application/json" },
